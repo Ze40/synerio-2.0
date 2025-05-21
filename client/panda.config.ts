@@ -12,7 +12,45 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      tokens: {
+        //Цвета:
+        colors: {
+          white: { value: "#FFFFFF" },
+          gray: {
+            base: { value: "#6F6F6F" },
+            100: { value: "#E4E4E4" },
+            200: { value: "#6F6F6F" },
+            300: { value: "#2D2D2D" },
+            400: { value: "#2D2D2D" },
+            500: { value: "#1E1E1E" },
+          },
+          black: { value: "#171717" },
+          primary: { value: "#F95C25" },
+        },
+      },
+    },
+  },
+
+  themes: {
+    dark: {
+      tokens: {
+        //Цвета:
+        colors: {
+          white: { value: "#FFFFFF" },
+          gray: {
+            base: { value: "#6F6F6F" },
+            100: { value: "#E4E4E4" },
+            200: { value: "#6F6F6F" },
+            300: { value: "#2D2D2D" },
+            400: { value: "#2D2D2D" },
+            500: { value: "#1E1E1E" },
+          },
+          black: { value: "#171717" },
+          primary: { value: "#FBB705" },
+        },
+      },
+    },
   },
 
   // The output directory for your css system
